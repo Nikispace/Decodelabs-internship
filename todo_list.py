@@ -4,7 +4,7 @@ print("TO-DO LISTS")
 task_list = []
 def addtasks():
     while True:
-        adding_task = input("\nWanna add task? (yes/no):")
+        adding_task = input("\nWanna add task? (yes/no): ")
         if ((adding_task).lower() == "yes"):
             task = input("\nEnter the task:")
             task_list.append({"task_name": task, "completed": False })
@@ -24,7 +24,7 @@ def display_all_tasks():
     else:
         print("\nSorry some error occured")
 def add_completed_Tasks():
-    n = int(input("Enter the task number that you've finished"))
+    n = int(input("Enter the task number that you've finished: "))
     for i,t in enumerate(task_list,1):
         if i == n:
             t["completed"] = True
@@ -81,7 +81,7 @@ def main_menu():
         elif ch == '6':
             delete_task()
         elif ch == '7':
-            print("Goodbye!")
+            print("Goodbye! Have a Productive day!")
             break  
         else:
             print("Invalid choice, please pick a number between 1 and 6.")
