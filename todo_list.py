@@ -81,10 +81,10 @@ def main_menu():
         elif ch == '6':
             delete_task()
         elif ch == '7':
-            print("Goodbye! Have a Productive day!")
+            print("Have a Productive day!")
             break  
         else:
-            print("Invalid choice, please pick a number between 1 and 6.")
+            print("Invalid choice, please pick a number between 1 and 7.")
 
 main_menu()
 
